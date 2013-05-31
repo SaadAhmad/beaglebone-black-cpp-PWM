@@ -36,7 +36,7 @@ namespace PWM
 		static std::string g_capeManagerSlotsPath;
 		if (g_capeManagerSlotsPath.length() <= 0)
 		{
-#ifdef DEBUG_VERBOSE_OUTPUT
+#if DEBUG_VERBOSE_OUTPUT
 			std::cout << "Setting up cape manager path" << std::endl;
 #endif
 			std::string capeBasePath("/sys/devices/");
