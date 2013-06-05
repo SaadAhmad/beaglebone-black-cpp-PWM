@@ -10,6 +10,7 @@ Features
 ========================
 * Allows changing the period of EHRPWM modules at run time
 * Allows for servo and motor esc control
+* * Basic examples to show LED brightness fading
 
 Installation
 ========================
