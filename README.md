@@ -6,6 +6,11 @@ http://www.phys-x.org/rbots/index.php?option=com_content&view=article&id=106:les
 and https://groups.google.com/d/msg/beagleboard/wjbOVE6ItNg/Dym4H4HuI8gJ
 I modified the driver and firmware and implemented a library on top of it.
 
+Features
+========================
+* Allows changing the period of EHRPWM modules at run time
+* Allows for servo and motor esc control
+
 Installation
 ========================
 
