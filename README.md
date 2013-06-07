@@ -10,7 +10,7 @@ Features
 ========================
 * Allows changing the period of EHRPWM modules at run time
 * Allows for servo and motor esc control
-* * Basic examples to show LED brightness fading
+* Basic examples to show LED brightness fading
 
 Installation
 ========================
@@ -104,6 +104,14 @@ echo <Period Value> > /sys/devices/ocp.<number>/pwm_test_<Whatever pin name you 
 ````sh
 echo <Duty Value> > /sys/devices/ocp.<number>/pwm_test_<Whatever pin name you chose>/duty
 ````
+
+Note: As was pointed out by Kurt (https://groups.google.com/d/msg/beagleboard/qma8bMph0yM/nOtE1R-gQpAJ) the polarity by default is inverted. 
+The duty by default repersents the time low instead of the time high. 
+Fix the polarity so that the duty specifies the high time by doing
+````sh
+echo 0 > /sys/devices/ocp.<number>/pwm_test_<Whatever pin name you chose>/polarity
+````
+Where  0 is for active high and 1 is for active low (default)
 
 5) Once configured, enable the pwm by doing
 ````sh
