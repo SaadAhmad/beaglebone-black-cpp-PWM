@@ -80,7 +80,7 @@ cp pwm_test.ko pwm_test.ko.orig
      
 3) Find the built pwm_test.ko file and copy it over to /lib/modules/<kernel version>/kernel/drivers/pwm/
  
-4) Copy over the build dtbo files to /lib/firmware
+4) Copy over the built dtbo (sc_pwm_P*.dtbo) files to /lib/firmware
 
 5) Youre done setting up the files! Do a reboot and you should be set
 
