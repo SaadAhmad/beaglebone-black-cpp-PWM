@@ -91,7 +91,7 @@ Userspace Usage
 ````sh
 echo am33xx_pwm >  /sys/devices/bone_capemgr.<WHATEVER YOUR NUMBER IS HERE>/slots
 #Example pin firmware would be sc_pwm_P8_13
-echo sc_pwm_P<use whatever pins you want>  /sys/devices/bone_capemgr.<WHATEVER YOUR NUMBER IS HERE>/slots
+echo sc_pwm_P<use whatever pins you want> > /sys/devices/bone_capemgr.<WHATEVER YOUR NUMBER IS HERE>/slots
 ````
 
 2) Locate the driver interface. It is in /sys/devices/ocp.<number>/pwm_test_<Whatever pin name you chose>
