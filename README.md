@@ -20,6 +20,29 @@ NOTE: My kernel building knowledge is limited and these are the stops I followed
 
 Firmware and update driver
 
+Compiling the driver on the BeagleBone
+-------------------------------
+1) Download & install build prereqs (Angstrom)
+````sh
+opkg update
+opkg upgrade
+opkg install kernel-dev
+opkg install kernel-headers
+opkg install task-native-sdk
+opkg git
+````
+
+2) Set up build environment and make the module
+````sh
+cd /usr/src/kernel
+make scripts
+ln -s /usr/src/kernel /lib/modules/$(uname -r)/build
+cd ~
+git clone git://SaadAhmad/beaglebone-black-cpp-PWM.git
+cd beaglebone-black-cpp-PWM/driver
+make
+````
+
 Compiling the driver and module (Optional)
 -------------------------------
 1) Follow the instructions at http://beagleboard.org/linux or http://wiki.beyondlogic.org/index.php/BeagleBoneBlack_Building_Kernel 
