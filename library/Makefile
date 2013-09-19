@@ -14,5 +14,5 @@ PWM.o: PWM.cpp
 	g++ -c PWM.cpp
 
 clean:
-	rm -rf *o MotorExapmle BasicPWMExample
+	rm -rf *o MotorExample BasicPWMExample
 
