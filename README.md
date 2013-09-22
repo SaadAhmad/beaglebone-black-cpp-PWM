@@ -151,8 +151,8 @@ however it would be great if people were willing to help out and make it happen!
 
 I have provided a BasicPWMExample.cpp which shows 
 you how to get an LED to fade in and out (NOTE dont actually connect the LED directly to your PWM output otherwise you may damage it). 
-It also inlcudes a MotorExample.cpp which shows you how to use a motor esc (Note there isnt servo example code but it is the same class as MotorControl so it should be the same). 
-Just change your angle range and youre good to go!
+It also includes a MotorExample.cpp and ServoExample.cpp which show you how to use a motor and servo, respectively. Just type "make" in the
+the library directory and it will compile the examples.
 
 Just copy over the CPP/Header files into your application and you are good to go!
 
