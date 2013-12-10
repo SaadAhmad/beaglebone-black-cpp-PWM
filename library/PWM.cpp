@@ -5,6 +5,7 @@
  *      Author: Saad Ahmad ( http://www.saadahmad.ca )
  */
 #include "PWM.h"
+#include <unistd.h>
 
 namespace PWM
 {
