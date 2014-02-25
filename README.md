@@ -96,7 +96,7 @@ modprobe -r pwm_test.ko
 ````
 
 2) Backup the old pwm_test.ko file
-````sh
+````
 cd /lib/modules/<kernel version>/kernel/drivers/pwm/
 cp pwm_test.ko pwm_test.ko.orig   
 ````
