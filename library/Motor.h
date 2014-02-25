@@ -91,6 +91,7 @@ public:
 		SetOutputValue(currentValue);
 		SetCurrentPWM(GetTargetPWM());
 	}
+	virtual ~MotorControl() { }
 	void SetOutputPercent(const float & percent)
 	{
 		int newPWM = int(GetMinPWM() + percent * (GetMaxPWM() - GetMinPWM()));
