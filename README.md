@@ -96,7 +96,7 @@ modprobe -r pwm_test.ko
 ````
 
 2) Backup the old pwm_test.ko file
-````
+````sh
 cd /lib/modules/<kernel version>/kernel/drivers/pwm/
 cp pwm_test.ko pwm_test.ko.orig   
 ````
@@ -122,6 +122,7 @@ echo sc_pwm_P<use whatever pins you want> > /sys/devices/bone_capemgr.<WHATEVER 
 3) Set the periods to to whatever value you want (Make sure that the period on both channels of each EHRPWM is same) by doing
 ````sh
 echo <Period Value> > /sys/devices/ocp.<number>/pwm_test_<Whatever pin name you chose>/period
+````
 
 4) Set the duty to to whatever value you want (Make sure that the period on both channels of each EHRPWM is same) by doing
 ````sh
